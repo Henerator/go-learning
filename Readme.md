@@ -2,6 +2,15 @@
 
 https://go.dev/play
 
+## Import
+
+### Import from local folder
+
+- run in project root folder
+  - `go mod init projectname`
+- use import
+  - `import "projectname/folder"`
+
 ## Unit tests
 
 There's a catch. This works well if:
