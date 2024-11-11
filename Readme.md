@@ -28,3 +28,13 @@ If `foo_test.go` and `foo.go` are the same package (a common case) then you must
 go test file.go -coverprofile=cover.out
 go tool cover -html=cover.out
 ```
+
+### Windows firewall
+
+- go to Windows Defender Firewall
+- select `Inbound Rules`
+- click `New Rule`
+  - choose `Port`
+  - select `TCP`
+  - `8080`
+  - `Allow the connection`
