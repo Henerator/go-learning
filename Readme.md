@@ -11,6 +11,10 @@ https://go.dev/play
 - use import
   - `import "projectname/folder"`
 
+## Slice
+
+https://ueokande.github.io/go-slice-tricks
+
 ## Unit tests
 
 There's a catch. This works well if:
