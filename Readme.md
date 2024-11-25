@@ -15,6 +15,52 @@ https://go.dev/play
 
 https://ueokande.github.io/go-slice-tricks
 
+## Module
+
+- init module
+  `go mod init golearning`
+- import module package
+  `import golearning/7-scope/lib`
+
+### Local modules
+
+- create main module
+
+```go
+module main
+
+go 1.23.3
+
+replace golearning => ../golearning
+```
+
+- run `go get golearning`
+
+### External modules
+
+`package.json` === `go.mod`  
+`package-lock.json` === `go.sum`
+
+```go
+module somemodule
+
+go 1.23
+
+require github.com/stretchr/testify v1.7.0
+```
+
+#### Vendor
+
+local copy of all dependencies
+
+`go mod vendor` - create vendors
+
+## Documentation
+
+- `go install golang.org/x/tools/...@latest`
+- `godoc -http=:6060`
+- open `localhost:6060`
+
 ## Unit tests
 
 There's a catch. This works well if:
